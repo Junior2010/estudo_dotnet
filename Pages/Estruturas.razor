@@ -1,0 +1,36 @@
+﻿@page "/estruturas"
+
+<PageTitle>Estruturas</PageTitle>
+
+<h1>Estruturas</h1>
+<h2>Tipos de inteiro</h2>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Tipo CTS</th>
+                <th scope="col">Tipo C#</th>
+                <th scope="col">Tamanho (em bytes)</th>
+                <th scope="col">Valor mínimo</th>
+                <th scope="col">Valor máximo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">System.Int16</th>
+                <td>short</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(System.Int16))</td>
+                <td>@Int16.MinValue</td>
+                <td>@Int16.MaxValue</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@code {
+
+
+
+
+
+}
