@@ -1,0 +1,52 @@
+﻿@page "/tipos/tipoflutuante"
+
+<h2>Tipos de ponto flutuante</h2>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Tipo CTS (Common Type System)</th>
+                <th scope="col">Tipo C#</th>
+                <th scope="col">Tamanho (em bytes)</th>
+                <th scope="col">Valor mínimo</th>
+                <th scope="col">Valor máximo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TIPO float --->
+            <tr>
+                <th scope="row">@typeof(float)</th>
+                <td>float</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(float))</td>
+                <td>@float.MaxValue</td>
+                <td>@float.MinValue</td>
+            </tr>
+
+            <!-- TIPO DOUBLE -->
+            <tr>
+                <th scope="row">@typeof(double)</th>
+                <td>double</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(double))</td>
+                <td>@double.MaxValue</td>
+                <td>@double.MinValue</td>
+            </tr>
+
+            <!-- TIPO DECIMAL -->
+            <tr>
+                <th scope="row">@typeof(decimal)</th>
+                <td>decimal</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(decimal))</td>
+                <td>@decimal.MaxValue</td>
+                <td>@decimal.MinValue</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <h3>UML dos tipos de ponto flutuante</h3>
+    <img src="images/uml-ponto-flutuante.png" alt="Tipos de ponto flutuante">
+</div>
+@code {
+
+}

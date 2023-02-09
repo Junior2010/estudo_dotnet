@@ -1,0 +1,120 @@
+﻿@page "/tipos/tipo_inteiro"
+
+<div class="conteiner">
+    <h2>Tipos de inteiro</h2>
+</div>
+<div class="container">
+    <table class="table">
+        <caption><b>Fonte: </b><a href="https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/integral-numeric-types?source=docs">Site Microsoft</a></caption>
+        <thead>
+            <tr>
+                <th scope="col">Tipo CTS (Common Type System)</th>
+                <th scope="col">Tipo C#</th>
+                <th scope="col">Tamanho (em bytes)</th>
+                <th scope="col">Valor mínimo</th>
+                <th scope="col">Valor máximo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TIPO sbyte -->
+            <tr>
+                <th scope="row">@typeof(sbyte)</th>
+                <td>sbyte</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(sbyte))</td>
+                <td>@sbyte.MinValue</td>
+                <td>@sbyte.MaxValue</td>
+            </tr>
+
+            <!-- TIPO byte -->
+            <tr>
+                <th scope="row">@typeof(byte)</th>
+                <td>byte</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(byte))</td>
+                <td>@byte.MinValue</td>
+                <td>@byte.MaxValue</td>
+            </tr>
+
+            <!-- TIPO short -->
+            <tr>
+                <th scope="row">@typeof(short)</th>
+                <td>short</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(short))</td>
+                <td>@short.MinValue</td>
+                <td>@short.MaxValue</td>
+            </tr>
+
+            <!-- TIPO ushort -->
+            <tr>
+                <th scope="row">@typeof(ushort)</th>
+                <td>ushort</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(ushort))</td>
+                <td>@ushort.MinValue</td>
+                <td>@ushort.MaxValue</td>
+            </tr>
+
+            <!-- TIPO int -->
+            <tr>
+                <th scope="row">@typeof(int)</th>
+                <td>int</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(int))</td>
+                <td>@int.MaxValue</td>
+                <td>@int.MinValue</td>
+            </tr>
+
+            <!-- TIPO UINT -->
+            <tr>
+                <th scope="row">@typeof(uint)</th>
+                <td>uint</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(uint))</td>
+                <td>@uint.MaxValue</td>
+                <td>@uint.MinValue</td>
+            </tr>
+
+            <!-- TIPO LONG -->
+            <tr>
+                <th scope="row">@typeof(long)</th>
+                <td>long</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(long))</td>
+                <td>@long.MaxValue</td>
+                <td>@long.MinValue</td>
+            </tr>
+
+            <!-- TIPO UINT64 -->
+            <tr>
+                <th scope="row">@typeof(ulong)</th>
+                <td>ulong</td>
+                <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(ulong))</td>
+                <td>@ulong.MaxValue</td>
+                <td>@ulong.MinValue</td>
+            </tr>
+
+            <!-- TIPO NINT -->
+            <tr>
+                <th scope="row">@typeof(nint)</th>
+                <td>nint</td>
+                <td>@nint.Size</td>
+                <td>@nint.MaxValue</td>
+                <td>@nint.MinValue</td>
+            </tr>
+
+            <!-- TIPO nuint -->
+            <tr>
+                <th scope="row">@typeof(nuint)</th>
+                <td>nuint</td>
+                <td>@nuint.Size</td>
+                <td>@nuint.MaxValue</td>
+                <td>@nuint.MinValue</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <h2>UML dos tipos inteiros</h2>
+    <figure class="figure">
+        <img src="images/uml-tipos-inteiros.png" class="figure-img img-fluid rounded" alt="Imagem tipos inteiros">
+    </figure>
+</div>
+
+@code {
+
+}

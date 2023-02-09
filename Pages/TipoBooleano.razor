@@ -1,0 +1,36 @@
+﻿@page "/tipos/tipobooleano"
+
+<h2>TipoBooleano</h2>
+
+<blockquote class="blockquote text-right">
+    <p class="mb-0">A palavra-chave de tipo bool é um alias para o tipo de estrutura System.Boolean do .NET que representa um valor booliano, que pode ser true ou false.</p>
+    <footer class="blockquote-footer">Fonte: <cite title="Microsoft">Microsoft. Disponível em https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/bool">bool (referência de C#) </cite></footer>
+</blockquote>
+
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Alguém famoso na <cite title="Título da fonte">Título da fonte</cite></footer>
+</blockquote>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <th scope="col">Tipo CTS (Common Type System)</th>
+            <th scope="col">Tipo C#</th>
+            <th scope="col">Tamanho (em bytes)</th>
+        </thead>
+        <tbody>
+            <th scope="row">@typeof(bool)</th>
+            <td>bool</td>
+            <td>@System.Runtime.InteropServices.Marshal.SizeOf(typeof(bool))</td>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <h3>UML do tipo booleano</h3>
+    <img src="images/uml-tipo-booleano.png" alt="Tipo booleano"/>
+</div>
+
+@code {
+
+}
